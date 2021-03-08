@@ -1,3 +1,121 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    padding: relative;
+    background-color: rgba(0,0,0,.6);
+    height: 100vh;
+   
+}
+
+.flexbox:before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('./imgaes/crop.jpeg');
+    background-size: cover;
+    content: " ";
+    z-index: -1;
+    color: #fff;
+}
+
+nav{
+    display: flex; 
+    padding: 50px 30px;
+    justify-content: space-between;
+
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: #fff;
+    font-size: 30px;
+    
+}
+
+a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+nav ul li a {
+    padding: 20px 20px;
+    color: #fff;
+    font-size:25px ;
+    
+}
+
+nav ul li a:hover {
+    background-color:  rgb(233, 29, 29);
+    border-radius: 20px;
+    padding: 10px 30px;
+
+}
+
+.dropdown {
+    display: flex ;
+    flex-direction: column;
+    width: 100%;
     background-color: yellow;
+}
+
+.dropdown:hover{
+    background-color: black;
+}
+
+.dropdown-me {
+    display: flex ;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dropdown-loc {
+    display: flex ;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.A-Bistro {
+    display: flex;
+    flex-direction: reverse;
+    font-family:fantasy;
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-pl{
+    display: flex;
+    color: #fff;
+    flex-direction: row-reverse;
+    padding: 10px 30px;
+    background-color: rgb(233, 29, 29);
+    border-radius: 20px;
+}
+
+.icon .fab {
+    display: flow-root;
+    color: #fff;
+    flex-direction: column-reverse;
+    padding: 10px;
+    margin-top: 70%;
+    font-size: 35px;
+}
+
+.icon .fab:hover{
+    color: rgb(233, 29, 29);
+
 }
